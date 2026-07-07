@@ -38,15 +38,23 @@
 - Visualized distribution of Values in USD
 
 
+**SireLineSignificance**
+1. Loaded 2025SireLineUpdate_SYNTHETIC dataset
+   
+3. One Hot encoded categorical variables
+   
+5. Split the dataset into train and testing sets
+   
+7. Scaled data to optimize for the Random Forest Regressor
+   
+9. Used the Random Forest Regressor to extract Mean Absolute Error, Root Mean Square Error, and R2 value
+   - The R2 value of 0.95 means 95 percent of variance of the dependent variables in the model can be explained by the independent variables.
+     
+10. Conducted ANOVA Tests between SIRELINE and these variables (PERCENT MORTALITY, AVERAGE DAILY GAIN, FEED COST, and PERCENT TOPS)
+   - Returned p values and f statistics
+   - Returned best sireline based on these comparisons
+   - Graphed each sireline vs respective variables with matplotlib
+     
+11. All Sirelines were statistically significant (p-values < 0.05), meaning at least one of their means were statistically different from the others
 
-
-
-
-
-
-
-
-
-
-
-
+12. Exported a DataFrame with results to "SireLineSignificance.csv"

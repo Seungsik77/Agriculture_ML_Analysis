@@ -58,3 +58,6 @@
 11. All Sirelines were statistically significant (p-values < 0.05), meaning at least one of their means were statistically different from the others
 
 12. Exported a DataFrame with results to "SireLineSignificance.csv"
+
+**SireLineSignificanceTukeyTest**
+This notebook runs a TukeyTest for each category, returning an aggreagted csv of all Tukey Tests.
